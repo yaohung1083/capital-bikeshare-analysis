@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="500" viewBox="0 0 840 500" role="img" aria-label="Classic bike forecast errors in two January evaluation periods">
+<rect width="840" height="500" fill="#f8fafc" rx="18"/>
+<g font-family="system-ui,sans-serif" fill="#172b40">
+<text x="32" y="42" font-size="25" fill="#172b40">Classic bike forecasts across two January periods</text>
+<text x="32" y="68" font-size="15" fill="#172b40">Bikes per station-hour · lower is better</text>
+<rect x="32" y="86" width="13" height="13" rx="2" fill="#64748b"/>
+<text x="52" y="98" font-size="15" fill="#172b40">Previous hour</text>
+<rect x="205" y="86" width="13" height="13" rx="2" fill="#007c78"/>
+<text x="225" y="98" font-size="15" fill="#172b40">Historical average</text>
+<text x="32" y="139" font-size="20" fill="#172b40">Jan 18–24</text>
+<text x="32" y="173" font-size="15" fill="#172b40">Overall MAE</text>
+<rect x="32" y="183" width="52.44" height="15" rx="3" fill="#64748b"/>
+<text x="92.4425" y="196" font-size="13" fill="#172b40">0.191</text>
+<rect x="32" y="206" width="46.23" height="15" rx="3" fill="#007c78"/>
+<text x="86.22749999999999" y="219" font-size="13" fill="#172b40">0.168</text>
+<text x="32" y="265" font-size="15" fill="#172b40">Morning peak underprediction</text>
+<rect x="32" y="275" width="166.16" height="15" rx="3" fill="#64748b"/>
+<text x="206.155" y="288" font-size="13" fill="#172b40">0.604</text>
+<rect x="32" y="298" width="116.74" height="15" rx="3" fill="#007c78"/>
+<text x="156.7375" y="311" font-size="13" fill="#172b40">0.424</text>
+<text x="32" y="357" font-size="15" fill="#172b40">Evening peak underprediction</text>
+<rect x="32" y="367" width="131.20" height="15" rx="3" fill="#64748b"/>
+<text x="171.20250000000001" y="380" font-size="13" fill="#172b40">0.477</text>
+<rect x="32" y="390" width="101.03" height="15" rx="3" fill="#007c78"/>
+<text x="141.035" y="403" font-size="13" fill="#172b40">0.367</text>
+<text x="432" y="139" font-size="20" fill="#172b40">Jan 25–31</text>
+<text x="432" y="173" font-size="15" fill="#172b40">Overall MAE</text>
+<rect x="432" y="183" width="78.05" height="15" rx="3" fill="#64748b"/>
+<text x="518.0450000000001" y="196" font-size="13" fill="#172b40">0.284</text>
+<rect x="432" y="206" width="62.09" height="15" rx="3" fill="#007c78"/>
+<text x="502.095" y="219" font-size="13" fill="#172b40">0.226</text>
+<text x="432" y="265" font-size="15" fill="#172b40">Morning peak underprediction</text>
+<rect x="432" y="275" width="252.84" height="15" rx="3" fill="#64748b"/>
+<text x="692.835" y="288" font-size="13" fill="#172b40">0.919</text>
+<rect x="432" y="298" width="266.25" height="15" rx="3" fill="#007c78"/>
+<text x="706.255" y="311" font-size="13" fill="#172b40">0.968</text>
+<text x="432" y="357" font-size="15" fill="#172b40">Evening peak underprediction</text>
+<rect x="432" y="367" width="188.16" height="15" rx="3" fill="#64748b"/>
+<text x="628.155" y="380" font-size="13" fill="#172b40">0.684</text>
+<rect x="432" y="390" width="207.10" height="15" rx="3" fill="#007c78"/>
+<text x="647.1025" y="403" font-size="13" fill="#172b40">0.753</text>
+<text x="32" y="469" font-size="14" fill="#172b40">Same station-hours for both forecasts within each period.</text>
+</g></svg>
