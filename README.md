@@ -71,6 +71,63 @@
 
 ## 重現
 
+### SQLite 匯入與站點查詢
+
+原始 ZIP 下載到 `data/raw/` 後，從專案根目錄執行以下指令。腳本使用 Python 標準函式庫，匯入旅次 ID、起訖時間、站點 ID、車種及會員類型。站點 ID 保留為文字，空白轉為 SQL 的 NULL，時間沿用檔案時間。
+
+```sh
+python import_trips.py --db data/bikeshare.sqlite3 data/raw/202501-capitalbikeshare-tripdata.zip
+python import_trips.py --db data/bikeshare.sqlite3 data/raw/202501-capitalbikeshare-tripdata.zip
+```
+
+從空資料庫開始，第一次匯入 285,731 筆，第二次新增 0 筆。遇到重複旅次 ID 時保留已匯入的資料。新版月檔若修正同一 ID 的欄位，可用新版檔重建資料庫。
+
+開啟 `sqlite3 data/bikeshare.sqlite3`，執行下列查詢可重現 31600 站在 1/14 的 15 筆借出與 1 筆歸還。借出和歸還各依該端時間及站點查詢，時間範圍包含 08:00、排除 09:00。[站點時間線 Notebook](notebooks/16_historical_station_status.ipynb)
+
+```sql
+SELECT
+  (SELECT COUNT(*) FROM trips
+   WHERE start_station_id = '31600'
+     AND started_at >= '2025-01-14 08:00:00'
+     AND started_at <  '2025-01-14 09:00:00') AS departures,
+  (SELECT COUNT(*) FROM trips
+   WHERE end_station_id = '31600'
+     AND ended_at >= '2025-01-14 08:00:00'
+     AND ended_at <  '2025-01-14 09:00:00') AS arrivals;
+```
+
+### 啟動站點查詢 API
+
+本機環境及資料庫已備妥時，可直接使用 [10 分鐘操作教材](API_QUICKSTART.md)。
+
+先依上節匯入月檔，再從專案根目錄啟動 API。
+
+```sh
+python -m pip install -r requirements-api.txt
+python -m uvicorn app:app
+```
+
+瀏覽器開啟 [互動式 API 文件](http://127.0.0.1:8000/docs)，或在另一個終端機執行下列查詢。
+
+```sh
+curl 'http://127.0.0.1:8000/stations/31600/activity?start=2025-01-14T08:00:00&end=2025-01-14T09:00:00'
+```
+
+```json
+{
+  "station_id": "31600",
+  "start": "2025-01-14T08:00:00",
+  "end": "2025-01-14T09:00:00",
+  "departures": 15,
+  "arrivals": 1,
+  "net_departures": 14
+}
+```
+
+時間沿用旅次檔的鐘面時間，使用不帶時區偏移的 ISO 8601 日期與時間。區間包含起點、排除終點。時間格式有誤、帶時區偏移或開始時間未早於結束時間時，API 回傳 HTTP 422。查無符合的借還事件時，對應件數為零。預設讀取 `data/bikeshare.sqlite3`，可用 `BIKESHARE_DB` 指定其他路徑。資料庫無法讀取時回傳 HTTP 503。
+
+### 重跑分析 Notebook
+
 從本目錄以 Python 3.12 執行：
 
 ```sh

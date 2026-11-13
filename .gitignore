@@ -1,5 +1,6 @@
 .venv/
 data/raw/
+data/*.sqlite3*
 .ipynb_checkpoints/
 __pycache__/
 .DS_Store
