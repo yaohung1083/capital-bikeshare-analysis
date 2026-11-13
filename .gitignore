@@ -1,0 +1,6 @@
+.venv/
+data/raw/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+kernel-ipc-*

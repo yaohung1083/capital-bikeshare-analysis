@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="720" viewBox="0 0 920 720" role="img" aria-labelledby="title">
+<title id="title">三站一月一般平日與週末借還曲線</title>
+<rect width="920" height="720" fill="white"/>
+<g font-family="sans-serif" fill="#233444" font-size="13">
+<text x="45" y="34" font-size="22" font-weight="bold">三站一月借還曲線</text>
+<text x="45" y="61">每小時每日平均事件數 · 橫軸依檔案時間</text>
+<text x="682" y="61" fill="#075985">━ 借出</text>
+<text x="775" y="61" fill="#a13d20">┄ 歸還</text>
+<text x="65" y="88" font-weight="bold">一般平日 · 20 天</text>
+<text x="515" y="88" font-weight="bold">週末 · 8 天</text>
+<text x="65" y="121" font-weight="bold">31101 14th &amp; V St NW · 借 1,234／還 1,193</text>
+<path d="M65 258.0h365" stroke="#dce4ea"/>
+<text x="56" y="262.0" text-anchor="end">0</text>
+<path d="M65 227.25h365" stroke="#dce4ea"/>
+<text x="56" y="231.25" text-anchor="end">3</text>
+<path d="M65 196.5h365" stroke="#dce4ea"/>
+<text x="56" y="200.5" text-anchor="end">6</text>
+<path d="M65 165.75h365" stroke="#dce4ea"/>
+<text x="56" y="169.75" text-anchor="end">9</text>
+<path d="M65 135.0h365" stroke="#dce4ea"/>
+<text x="56" y="139.0" text-anchor="end">12</text>
+<text x="65.0" y="278" text-anchor="middle">00</text>
+<text x="128.5" y="278" text-anchor="middle">04</text>
+<text x="192.0" y="278" text-anchor="middle">08</text>
+<text x="255.4" y="278" text-anchor="middle">12</text>
+<text x="318.9" y="278" text-anchor="middle">16</text>
+<text x="382.4" y="278" text-anchor="middle">20</text>
+<text x="430.0" y="278" text-anchor="middle">23</text>
+<polyline points="65.0,248.3 80.9,255.9 96.7,257.5 112.6,256.5 128.5,257.0 144.3,251.8 160.2,243.1 176.1,218.5 192.0,184.7 207.8,208.3 223.7,241.1 239.6,229.8 255.4,231.9 271.3,230.3 287.2,230.3 303.0,230.8 318.9,225.7 334.8,207.8 350.7,196.0 366.5,213.9 382.4,216.5 398.3,239.0 414.1,241.6 430.0,243.1" fill="none" stroke="#075985" stroke-width="2.4" stroke-dasharray="none"/>
+<polyline points="65.0,253.9 80.9,257.0 96.7,257.5 112.6,253.9 128.5,255.4 144.3,232.4 160.2,246.7 176.1,236.0 192.0,236.5 207.8,243.1 223.7,239.0 239.6,228.8 255.4,236.5 271.3,232.4 287.2,232.9 303.0,220.1 318.9,210.3 334.8,172.9 350.7,165.2 366.5,211.4 382.4,228.3 398.3,235.4 414.1,244.7 430.0,250.3" fill="none" stroke="#a13d20" stroke-width="2.4" stroke-dasharray="7 4"/>
+<text x="515" y="121" font-weight="bold">31101 14th &amp; V St NW · 借 557／還 585</text>
+<path d="M515 258.0h365" stroke="#dce4ea"/>
+<text x="506" y="262.0" text-anchor="end">0</text>
+<path d="M515 227.25h365" stroke="#dce4ea"/>
+<text x="506" y="231.25" text-anchor="end">3</text>
+<path d="M515 196.5h365" stroke="#dce4ea"/>
+<text x="506" y="200.5" text-anchor="end">6</text>
+<path d="M515 165.75h365" stroke="#dce4ea"/>
+<text x="506" y="169.75" text-anchor="end">9</text>
+<path d="M515 135.0h365" stroke="#dce4ea"/>
+<text x="506" y="139.0" text-anchor="end">12</text>
+<text x="515.0" y="278" text-anchor="middle">00</text>
+<text x="578.5" y="278" text-anchor="middle">04</text>
+<text x="642.0" y="278" text-anchor="middle">08</text>
+<text x="705.4" y="278" text-anchor="middle">12</text>
+<text x="768.9" y="278" text-anchor="middle">16</text>
+<text x="832.4" y="278" text-anchor="middle">20</text>
+<text x="880.0" y="278" text-anchor="middle">23</text>
+<polyline points="515.0,237.5 530.9,246.5 546.7,246.5 562.6,249.0 578.5,258.0 594.3,251.6 610.2,252.9 626.1,252.9 642.0,240.1 657.8,220.8 673.7,209.3 689.6,193.9 705.4,200.3 721.3,199.1 737.2,204.2 753.0,208.0 768.9,209.3 784.8,215.7 800.7,200.3 816.5,226.0 832.4,236.2 848.3,245.2 864.1,240.1 880.0,234.9" fill="none" stroke="#075985" stroke-width="2.4" stroke-dasharray="none"/>
+<polyline points="515.0,247.8 530.9,251.6 546.7,254.2 562.6,246.5 578.5,255.4 594.3,256.7 610.2,249.0 626.1,242.6 642.0,232.4 657.8,210.6 673.7,214.4 689.6,200.3 705.4,206.8 721.3,197.8 737.2,193.9 753.0,209.3 768.9,193.9 784.8,213.2 800.7,204.2 816.5,218.3 832.4,224.7 848.3,238.8 864.1,242.6 880.0,237.5" fill="none" stroke="#a13d20" stroke-width="2.4" stroke-dasharray="7 4"/>
+<text x="65" y="318" font-weight="bold">31699 Eastern Market Metro · 借 1,259／還 1,223</text>
+<path d="M65 455.0h365" stroke="#dce4ea"/>
+<text x="56" y="459.0" text-anchor="end">0</text>
+<path d="M65 424.25h365" stroke="#dce4ea"/>
+<text x="56" y="428.25" text-anchor="end">3</text>
+<path d="M65 393.5h365" stroke="#dce4ea"/>
+<text x="56" y="397.5" text-anchor="end">6</text>
+<path d="M65 362.75h365" stroke="#dce4ea"/>
+<text x="56" y="366.75" text-anchor="end">9</text>
+<path d="M65 332.0h365" stroke="#dce4ea"/>
+<text x="56" y="336.0" text-anchor="end">12</text>
+<text x="65.0" y="475" text-anchor="middle">00</text>
+<text x="128.5" y="475" text-anchor="middle">04</text>
+<text x="192.0" y="475" text-anchor="middle">08</text>
+<text x="255.4" y="475" text-anchor="middle">12</text>
+<text x="318.9" y="475" text-anchor="middle">16</text>
+<text x="382.4" y="475" text-anchor="middle">20</text>
+<text x="430.0" y="475" text-anchor="middle">23</text>
+<polyline points="65.0,452.4 80.9,455.0 96.7,455.0 112.6,455.0 128.5,455.0 144.3,454.5 160.2,449.9 176.1,448.3 192.0,421.7 207.8,425.8 223.7,433.5 239.6,429.4 255.4,420.1 271.3,421.7 287.2,414.0 303.0,401.7 318.9,386.3 334.8,362.2 350.7,377.6 366.5,407.9 382.4,426.8 398.3,429.9 414.1,440.1 430.0,450.9" fill="none" stroke="#075985" stroke-width="2.4" stroke-dasharray="none"/>
+<polyline points="65.0,455.0 80.9,455.0 96.7,455.0 112.6,455.0 128.5,455.0 144.3,446.3 160.2,440.1 176.1,400.7 192.0,373.0 207.8,420.1 223.7,428.4 239.6,437.1 255.4,420.7 271.3,424.8 287.2,422.7 303.0,409.4 318.9,405.8 334.8,385.8 350.7,404.8 366.5,418.6 382.4,434.0 398.3,447.3 414.1,447.8 430.0,450.9" fill="none" stroke="#a13d20" stroke-width="2.4" stroke-dasharray="7 4"/>
+<text x="515" y="318" font-weight="bold">31699 Eastern Market Metro · 借 469／還 486</text>
+<path d="M515 455.0h365" stroke="#dce4ea"/>
+<text x="506" y="459.0" text-anchor="end">0</text>
+<path d="M515 424.25h365" stroke="#dce4ea"/>
+<text x="506" y="428.25" text-anchor="end">3</text>
+<path d="M515 393.5h365" stroke="#dce4ea"/>
+<text x="506" y="397.5" text-anchor="end">6</text>
+<path d="M515 362.75h365" stroke="#dce4ea"/>
+<text x="506" y="366.75" text-anchor="end">9</text>
+<path d="M515 332.0h365" stroke="#dce4ea"/>
+<text x="506" y="336.0" text-anchor="end">12</text>
+<text x="515.0" y="475" text-anchor="middle">00</text>
+<text x="578.5" y="475" text-anchor="middle">04</text>
+<text x="642.0" y="475" text-anchor="middle">08</text>
+<text x="705.4" y="475" text-anchor="middle">12</text>
+<text x="768.9" y="475" text-anchor="middle">16</text>
+<text x="832.4" y="475" text-anchor="middle">20</text>
+<text x="880.0" y="475" text-anchor="middle">23</text>
+<polyline points="515.0,447.3 530.9,449.9 546.7,455.0 562.6,453.7 578.5,455.0 594.3,453.7 610.2,449.9 626.1,453.7 642.0,442.2 657.8,428.1 673.7,421.7 689.6,412.7 705.4,414.0 721.3,399.9 737.2,388.4 753.0,379.4 768.9,397.3 784.8,416.6 800.7,419.1 816.5,423.0 832.4,430.7 848.3,442.2 864.1,440.9 880.0,444.8" fill="none" stroke="#075985" stroke-width="2.4" stroke-dasharray="none"/>
+<polyline points="515.0,447.3 530.9,455.0 546.7,452.4 562.6,453.7 578.5,455.0 594.3,453.7 610.2,451.2 626.1,452.4 642.0,415.3 657.8,425.5 673.7,403.8 689.6,401.2 705.4,405.0 721.3,379.4 737.2,393.5 753.0,382.0 768.9,402.5 784.8,416.6 800.7,424.2 816.5,442.2 832.4,443.5 848.3,444.8 864.1,447.3 880.0,449.9" fill="none" stroke="#a13d20" stroke-width="2.4" stroke-dasharray="7 4"/>
+<text x="65" y="515" font-weight="bold">31600 5th &amp; K St NW · 借 1,244／還 1,240</text>
+<path d="M65 652.0h365" stroke="#dce4ea"/>
+<text x="56" y="656.0" text-anchor="end">0</text>
+<path d="M65 621.25h365" stroke="#dce4ea"/>
+<text x="56" y="625.25" text-anchor="end">3</text>
+<path d="M65 590.5h365" stroke="#dce4ea"/>
+<text x="56" y="594.5" text-anchor="end">6</text>
+<path d="M65 559.75h365" stroke="#dce4ea"/>
+<text x="56" y="563.75" text-anchor="end">9</text>
+<path d="M65 529.0h365" stroke="#dce4ea"/>
+<text x="56" y="533.0" text-anchor="end">12</text>
+<text x="65.0" y="672" text-anchor="middle">00</text>
+<text x="128.5" y="672" text-anchor="middle">04</text>
+<text x="192.0" y="672" text-anchor="middle">08</text>
+<text x="255.4" y="672" text-anchor="middle">12</text>
+<text x="318.9" y="672" text-anchor="middle">16</text>
+<text x="382.4" y="672" text-anchor="middle">20</text>
+<text x="430.0" y="672" text-anchor="middle">23</text>
+<polyline points="65.0,649.4 80.9,651.0 96.7,651.0 112.6,652.0 128.5,651.0 144.3,642.3 160.2,636.6 176.1,605.9 192.0,561.3 207.8,602.3 223.7,638.2 239.6,638.7 255.4,632.5 271.3,624.3 287.2,628.9 303.0,617.1 318.9,602.8 334.8,594.6 350.7,585.9 366.5,609.0 382.4,627.9 398.3,630.0 414.1,632.5 430.0,645.3" fill="none" stroke="#075985" stroke-width="2.4" stroke-dasharray="none"/>
+<polyline points="65.0,651.0 80.9,650.0 96.7,651.0 112.6,651.5 128.5,649.4 144.3,642.8 160.2,628.4 176.1,630.0 192.0,625.9 207.8,630.5 223.7,635.1 239.6,624.3 255.4,620.7 271.3,630.5 287.2,612.5 303.0,613.0 318.9,588.5 334.8,559.2 350.7,573.1 366.5,600.8 382.4,623.3 398.3,636.6 414.1,640.7 430.0,643.8" fill="none" stroke="#a13d20" stroke-width="2.4" stroke-dasharray="7 4"/>
+<text x="515" y="515" font-weight="bold">31600 5th &amp; K St NW · 借 452／還 494</text>
+<path d="M515 652.0h365" stroke="#dce4ea"/>
+<text x="506" y="656.0" text-anchor="end">0</text>
+<path d="M515 621.25h365" stroke="#dce4ea"/>
+<text x="506" y="625.25" text-anchor="end">3</text>
+<path d="M515 590.5h365" stroke="#dce4ea"/>
+<text x="506" y="594.5" text-anchor="end">6</text>
+<path d="M515 559.75h365" stroke="#dce4ea"/>
+<text x="506" y="563.75" text-anchor="end">9</text>
+<path d="M515 529.0h365" stroke="#dce4ea"/>
+<text x="506" y="533.0" text-anchor="end">12</text>
+<text x="515.0" y="672" text-anchor="middle">00</text>
+<text x="578.5" y="672" text-anchor="middle">04</text>
+<text x="642.0" y="672" text-anchor="middle">08</text>
+<text x="705.4" y="672" text-anchor="middle">12</text>
+<text x="768.9" y="672" text-anchor="middle">16</text>
+<text x="832.4" y="672" text-anchor="middle">20</text>
+<text x="880.0" y="672" text-anchor="middle">23</text>
+<polyline points="515.0,634.1 530.9,643.0 546.7,650.7 562.6,648.2 578.5,652.0 594.3,652.0 610.2,650.7 626.1,648.2 642.0,636.6 657.8,623.8 673.7,614.8 689.6,598.2 705.4,607.2 721.3,607.2 737.2,590.5 753.0,596.9 768.9,618.7 784.8,618.7 800.7,622.5 816.5,620.0 832.4,620.0 848.3,632.8 864.1,639.2 880.0,643.0" fill="none" stroke="#075985" stroke-width="2.4" stroke-dasharray="none"/>
+<polyline points="515.0,641.8 530.9,646.9 546.7,645.6 562.6,641.8 578.5,652.0 594.3,652.0 610.2,648.2 626.1,646.9 642.0,623.8 657.8,625.1 673.7,611.0 689.6,595.6 705.4,599.5 721.3,590.5 737.2,609.7 753.0,596.9 768.9,602.0 784.8,611.0 800.7,603.3 816.5,614.8 832.4,631.5 848.3,635.3 864.1,644.3 880.0,645.6" fill="none" stroke="#a13d20" stroke-width="2.4" stroke-dasharray="7 4"/>
+</g></svg>

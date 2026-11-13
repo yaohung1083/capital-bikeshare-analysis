@@ -1,8 +1,33 @@
 # Capital Bikeshare｜站點使用分析與尖峰借車量預測
 
-以華盛頓特區及周邊的 Capital Bikeshare 旅次資料，評估一般自行車下一小時借車量能否作為尖峰補車排序的輸入。
+用華盛頓特區及周邊的 Capital Bikeshare 旅次與歷史站況，找出哪些站點、哪些時段值得優先調查。
+
+- **缺值會改變車種組成。** 只保留起迄站 ID 都完整的旅次，電輔車占比從 72.37% 降到 52.77%。[缺值敏感度分析](notebooks/13_missingness_sensitivity.ipynb)
+- **月借還量相近，平日 08 時的借還方向可以相反。** 31600 和 31101 平均每天分別多借出 6.30 和 5.05 件，31699 則多歸還 4.75 件。三站各有 17 或 18 個一般平日與月平均方向一致。[三站對照](notebooks/15_january_station_comparison.ipynb)
+- **31600 站在 1/8 與 1/14 的 08 時都觀測到零可借車。** 兩天的時間線列出尖峰前站況、首筆零值及之後的借還量。零值持續時間與調度原因仍待核對。[歷史站況與兩天時間線](notebooks/16_historical_station_status.ipynb)
+
+[階段報告](STAGE_REPORT.md) · [一頁決策摘要與優先調查清單](DECISION_SUMMARY.md)
+
+**31600 站的對帳受時間邊界影響。** 1/14 首筆零值前，改用站況來源更新時間後，多計入 08:55:32.365 的一筆借出，短區間差額由 −1 輛變為 0 輛。從尖峰前最近站況到首筆零值的較長區間仍差 −1 輛，待核對原始站況和調度紀錄。[兩種時間口徑的對帳比較](notebooks/16_historical_station_status.ipynb)
+
+## 缺值敏感度
+
+[缺值敏感度 Notebook](notebooks/13_missingness_sensitivity.ipynb) 從原始 ZIP 重跑健檢，並比較全部一月借出與起迄站 ID 皆完整的旅次。只保留兩端完整會留下 166,757 / 285,695 筆（58.37%）。
+
+| 指標 | 全部一月借出 | 兩端完整 | 差值（百分點） |
+|---|---:|---:|---:|
+| 電輔車占比 | 72.37% | 52.77% | −19.60 |
+| 會員旅次占比 | 78.91% | 75.45% | −3.45 |
+| 07:00–09:59 借出占比 | 15.82% | 17.55% | +1.74 |
+| 16:00–18:59 借出占比 | 26.23% | 27.19% | +0.96 |
+
+差值由未四捨五入的比例計算。兩組借出量最高的小時皆為 17:00–17:59。比較含一月所有日型，依檔案時間切分，時區尚未確認。
+
+站點分析若按事件各自篩選，可保留一月借出 197,585 / 285,695 件（69.16%）與一月歸還 194,514 / 285,731 件（68.08%）。借出與歸還各按自身事件時間判定是否在一月，因此分母不同。這些比率衡量 ID 欄位的涵蓋，站點歸屬仍待核對。
 
 ## 主要結果
+
+以下是一般自行車下一小時借出量的預測基準比較，用於評估尖峰補車排序的可能輸入。
 
 ![兩段評估期的一般車整體 MAE 與尖峰平均低估量](figures/classic_forecast_comparison.svg)
 
@@ -58,6 +83,21 @@ jupyter nbconvert --to notebook --execute --inplace notebooks/01_data_check.ipyn
 ```
 
 如要重跑其他 Notebook，把最後一行的路徑改成對應檔案。各 Notebook 可獨立執行，讀取官方 ZIP，執行目錄為 Notebook 所在的資料夾。
+
+完成上述環境與資料準備後，從本目錄重跑一頁摘要的分析：
+
+```sh
+jupyter nbconvert --to notebook --execute --inplace notebooks/13_missingness_sensitivity.ipynb
+jupyter nbconvert --to notebook --execute --inplace notebooks/15_january_station_comparison.ipynb
+```
+
+要重跑歷史站況與 31600 站時間線，另下載 CityBikes 的一月站況檔：
+
+```sh
+python -m pip install duckdb
+curl -fL https://data.citybik.es/dumps/by-network/2025/202501-capital-bikeshare-stats.parquet -o data/raw/202501-capital-bikeshare-stats.parquet
+jupyter nbconvert --to notebook --execute --inplace notebooks/16_historical_station_status.ipynb
+```
 
 ## 第一階段執行結果
 
